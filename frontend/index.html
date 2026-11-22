@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCare AI | Smart Skin Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>SkinCare <span>AI</span></h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#scan">Face Scan</a>
+            <a href="#report">Upload Report</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Your Skin, <span>Understood.</span></h1>
+            <p>
+                Discover your skin insights and personalized
+                skincare recommendations with AI.
+            </p>
+            <a href="#scan" class="primary-btn">Start Analysis</a>
+        </section>
+
+        <section id="scan" class="section">
+            <h2>AI Face Analysis</h2>
+            <p>Capture a photo using your camera to begin.</p>
+
+            <div class="camera-box">
+                <video id="camera" autoplay playsinline></video>
+                <canvas id="canvas" hidden></canvas>
+
+                <p id="camera-message">
+                    Your camera preview will appear here.
+                </p>
+            </div>
+
+            <div class="button-group">
+                <button id="start-camera">Open Camera</button>
+                <button id="capture" disabled>Capture & Analyze</button>
+                <button id="stop-camera" disabled>Stop Camera</button>
+            </div>
+
+            <p id="scan-status"></p>
+        </section>
+
+        <section id="report" class="section">
+            <h2>Upload Skin Report</h2>
+            <p>Already have a skincare report? Upload your PDF.</p>
+
+            <input
+                type="file"
+                id="pdf-file"
+                accept="application/pdf"
+            >
+
+            <button id="upload-pdf">Upload PDF</button>
+
+            <p id="pdf-status"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SkinCare AI | AI-powered skin insights</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

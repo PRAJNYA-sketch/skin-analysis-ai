@@ -1,0 +1,170 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5f2;
+    color: #333;
+}
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+header h2 {
+    color: #333;
+}
+
+header h2 span {
+    color: #bd8294;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #bd8294;
+}
+
+/* Hero section */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f7e8e9, #f9f3ed);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #bd8294;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #bd8294;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* Common sections */
+
+.section {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section > p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Camera */
+
+.camera-box {
+    width: 90%;
+    max-width: 500px;
+    min-height: 280px;
+    margin: 25px auto;
+    background: #eee7e5;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#camera {
+    width: 100%;
+    display: none;
+    border-radius: 15px;
+}
+
+#camera-message {
+    color: #888;
+    padding: 20px;
+}
+
+button {
+    background: #bd8294;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover,
+.primary-btn:hover {
+    background: #a9687d;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+#scan-status,
+#pdf-status {
+    margin-top: 15px;
+    color: #bd8294;
+}
+
+/* PDF section */
+
+#report {
+    background: white;
+}
+
+#pdf-file {
+    display: block;
+    margin: 25px auto 15px;
+    max-width: 90%;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #f0e5e4;
+    color: #777;
+}
